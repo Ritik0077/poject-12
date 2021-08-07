@@ -1,0 +1,15 @@
+.gif-main {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+  height: 150px;
+
+}
+
+h3 {
+  color: #2e2e2e;
+}

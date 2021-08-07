@@ -1,0 +1,72 @@
+html,
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("./assets/asia-map3.jpg");
+}
+.container {
+  height: 100vh;
+  margin: auto;
+  backdrop-filter: blur(3.5px);
+}
+
+.center {
+  display: flex;
+  direction: ltr;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+img {
+  margin-right: 10px;
+}
+
+.cards {
+  margin-top: 20px;
+  margin-left: 20px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 5rem;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  font: inherit;
+  border: 1px solid #636e72;
+  border-radius: 5px;
+  background: #2d3436;
+  color: white;
+  padding: 0.25rem 1rem;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+button:hover,
+button:active {
+  background: #636e72;
+  border-color: #2d3436;
+  transform: scale(1.1);
+}
+button:focus {
+  outline: none;
+}
+
+@media (max-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .card img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+  }
+}
